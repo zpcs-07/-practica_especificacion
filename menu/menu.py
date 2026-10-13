@@ -60,6 +60,9 @@ def mostrarMenu():
     print("2. Calificación final") 
     print("3. Total de compra") 
     print("4. Estacionamiento") 
+    print("5. Renta de bicicletas") 
+    print("6. Precio de boleto de cine")
+    print("7. Multa por velocidad")
     print("0. Salir") 
  
  

@@ -76,5 +76,12 @@ def menus():
             ejecutarEjercicio3() 
         elif opcion == "4": 
             ejecutarEjercicio4() 
+        elif opcion == "5": 
+            ejecutarEjercicio5() 
+        elif opcion == "6": 
+            ejecutarEjercicio6() 
+        elif opcion == "7": 
+            ejecutarEjercicio7() 
         elif opcion != "0": 
+
             print("Opción no válida.")

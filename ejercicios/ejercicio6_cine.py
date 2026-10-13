@@ -1,14 +1,9 @@
 
 
+''' 
 Ejercicio 6. Boleto de cine 
 Un cine cobra $80 por boleto. Los niños de hasta 12 años y los adultos de 60 años o más pagan la mitad. 
 Se necesita mostrar el precio del boleto según la edad. 
-• Archivo: ejercicios/ejercicio6_cine.py 
-• Funciones: leerEdad, calcularPrecio, mostrarPrecio 
-• Entradas de prueba: 8, 12, 13, 59 y 60 años
-
-''' 
-Enunciado del problema, tal como lo entregó el cliente. 
 ''' 
 # PROBLEMA  
 # Se calcula el precio del boleto de cine según la edad del espectador.

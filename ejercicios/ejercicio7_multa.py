@@ -1,7 +1,4 @@
 
-• Archivo: ejercicios/ejercicio7_multa.py 
-• Funciones: leerVelocidad, calcularMulta, mostrarMulta 
-• Entradas de prueba: 50, 60, 61, 80 y 81 km/h 
 
 ''' 
 Ejercicio 7. Multa por velocidad 

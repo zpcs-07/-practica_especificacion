@@ -1,12 +1,9 @@
+
+
+''' 
 Ejercicio 5. Renta de bicicletas 
 Un parque renta bicicletas a $30 por hora. Si se rentan 3 horas o más, se aplica un 15% de descuento. Se 
 necesita mostrar el importe a pagar según las horas de renta. 
-• Archivo: ejercicios/ejercicio5_renta.py 
-• Funciones: leerHoras, calcularRenta, mostrarRenta 
-• Entradas de prueba: 1, 2, 3 y 4 horas
-
-''' 
-Enunciado del problema, tal como lo entregó el cliente. 
 ''' 
 # PROBLEMA 
 # Se calcula el importe a pagar por la renta de bicicletas. 
@@ -65,4 +62,3 @@ def calcularRenta(horas: int) -> float:
 
 def mostrarRenta(total: float) -> None:
     print(f"Total a pagar: ${total:.2f}")
-    

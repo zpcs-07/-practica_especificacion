@@ -1,31 +1,34 @@
-from ejercicios import ejercicio1_luz as ej1 
-from ejercicios import ejercicio2_calificacion as ej2 
-from ejercicios import ejercicio3_compra as ej3 
-from ejercicios import ejercicio4_estacionamiento as ej4 
+from ejercicios.ejercicio1_luz import leerConsumo, calcularPago, mostrarRecibo 
+from ejercicios.ejercicio2_calificacion import leerParciales, calcularFinal, determinarEstado, mostrarResultado
+from ejercicios.ejercicio3_compra import leerSubtotal, calcularDescuento, calcularIVA, calcularTotal, mostrarTicket
+from ejercicios.ejercicio4_estacionamiento import leerMinutos, calcularCobro, mostrarCobro 
  
  
 def ejecutarEjercicio1(): 
-    minutos = ej1.leerMinutos()
-    cobro = ej1.calcularCobro(minutos)
-    ej1.mostrarCobro(cobro)
+    consumo = leerConsumo()
+    cobro = calcularPago(consumo)
+    mostrarRecibo(cobro)
 
 
 def ejecutarEjercicio2(): 
-    minutos = ej2.leerMinutos()
-    calificacion = ej2.calcularCalificacion(minutos)
-    ej2.mostrarCalificacion(calificacion)
+    parciales = leerParciales()
+    calificacion_final = calcularFinal(parciales)
+    estado = determinarEstado(calificacion_final)
+    mostrarResultado(calificacion_final, estado)
 
 
 def ejecutarEjercicio3(): 
-    minutos = ej3.leerMinutos()
-    total = ej3.calcularTotal(minutos)
-    ej3.mostrarTotal(total)
+    subtotal = leerSubtotal()
+    descuento = calcularDescuento(subtotal)
+    iva = calcularIVA(subtotal, descuento)
+    total = calcularTotal(subtotal, descuento, iva)
+    mostrarTicket(subtotal, descuento, iva, total)
 
 
 def ejecutarEjercicio4(): 
-    minutos = ej4.leerMinutos()
-    cobro = ej4.calcularCobro(minutos)
-    ej4.mostrarCobro(cobro)
+    minutos = leerMinutos()
+    cobro = calcularCobro(minutos)
+    mostrarCobro(cobro)
 
 
 def mostrarMenu(): 

@@ -58,17 +58,18 @@ subtotal, descuento, IVA y total.
 
 def leerSubtotal() -> float:
     subtotal = float(input("Ingrese el subtotal de la compra: "))
-    return subtotal
+    return subtotal 
 
 def calcularDescuento(subtotal: float) -> float:
     if subtotal >= 5000:
         return subtotal * 0.2
     elif subtotal >= 1000:
         return subtotal * 0.1
-    return 0
+    else:
+        return 0.0  
 
 def calcularIVA(subtotal: float, descuento: float) -> float:
-    return (subtotal - descuento) * 0.16
+    return (subtotal - descuento) * 0.16    
 
 def calcularTotal(subtotal: float, descuento: float, iva: float) -> float:
     return round(subtotal - descuento + iva, 2)
@@ -77,4 +78,4 @@ def mostrarTicket(subtotal: float, descuento: float, iva: float, total: float) -
     print(f"Subtotal: ${subtotal:.2f}")
     print(f"Descuento: ${descuento:.2f}")
     print(f"IVA: ${iva:.2f}")
-    print(f"Total: ${total:.2f}")
+    print(f"Total: ${total:.2f}")   

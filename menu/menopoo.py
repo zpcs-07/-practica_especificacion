@@ -2,6 +2,7 @@ from clases.ejercicios import ejercicio1_luz
 from clases.ejercicios import ejercicio2_calificacion
 from clases.ejercicios import ejercicio3_compra
 from clases.ejercicios import ejercicio4_estacionamiento
+from clases.ejercicios import ejercicio5_bicicletas
 
 class menu(object):
     def __init__(self):
@@ -13,6 +14,7 @@ class menu(object):
         print("2. Calificación")
         print("3. Compra")
         print("4. Estacionamiento")
+        print("5. Bicicleta")
         print("0. Salir")
 
     def ejecutar(self):
@@ -40,5 +42,10 @@ class menu(object):
                 estacionamiento = ejercicio4_estacionamiento.Estacionamiento()
                 estacionamiento.leerMinutos()
                 estacionamiento.mostrarCobro()
+            elif self.opcion == "5":
+                bicicleta = ejercicio5_bicicletas.Bicicleta()
+                bicicleta.leerHoras()
+                bicicleta.total = bicicleta.calcularRenta(bicicleta.horas)
+                bicicleta.mostrarRenta(bicicleta.total)
             else:
                 print("Opción no válida.")

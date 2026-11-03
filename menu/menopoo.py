@@ -1,5 +1,6 @@
 from clases.ejercicios import ejercicio1_luz
 from clases.ejercicios import ejercicio2_calificacion
+from clases.ejercicios import ejercicio3_compra
 
 class menu(object):
     def __init__(self):
@@ -9,6 +10,7 @@ class menu(object):
         print("Ejemplo programa con POO")
         print("1. Luz")
         print("2. Calificación")
+        print("3. Compra")  
         print("0. Salir")
 
     def ejecutar(self):
@@ -25,5 +27,12 @@ class menu(object):
                 calif.leerParciales()
                 calif.calcularFinal()
                 calif.mostrarResultado()
+            elif self.opcion == "3":
+                compra = ejercicio3_compra.Compra()
+                compra.leerSubtotal()
+                compra.calcularDescuento()
+                compra.iva = compra.calcularIVA()
+                compra.calcularTotal()
+                compra.mostrarTicket()
             else:
                 print("Opción no válida.")
